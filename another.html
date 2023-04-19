@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link class="container"nk rel="stylesheet" href="style.css"> -->
+        <title>Document</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap');
+            
+            *
+            {
+                padding: 0;
+                margin: 0;
+                box-sizing: inherit;
+            }
+            header
+            {
+                height: auto;
+                background-color: #242424;
+                color: #dfdfdf;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .title
+            {
+                cursor: pointer;
+                font-weight: 300;
+            } 
+            main
+            {
+                padding: 40px 80px;
+                color: #464646;
+                font-family: Arial, Verdana, Helvetica, sans-serif;
+            }
+            main .container
+            {
+                font-family: 'Inter', sans-serif;
+                border-bottom: 1.5px solid #333a3357;
+                width: 100%;
+                height: 25px;
+                overflow: hidden;
+                margin: 25px;
+            }
+            main .content
+            {
+                padding: 20px 10px;
+                font-weight: 300;
+            }
+            .active
+            {
+                height: auto !important;
+                border: none;
+            }
+            .top
+            {
+                text-align: center;
+            }
+            .text
+            {
+                margin-top: 20px;
+                text-align: center;
+            }
+            .special
+            {
+                font-size: 52px;
+                font-family: 'EB Garamond', serif;
+            }
+            .text-primary
+            {
+                font-weight: 700;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div style="height: 100%; padding: 20px;">
+                <div class="top">App Name</div>
+                <p class="text">
+                    <span class="special">Privacy Policy</span><br>
+                    <span style="color: #dfdfdfb0; font-size: 15px; font-family: Arial, Verdana, Helvetica, sans-serif;">Last Updated: April 18, 2023</span>
+                </p>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <span class="title">1. Introduction</span>
+                <p class="content">
+                    At [Your Company Name], we value your privacy and are committed to protecting your personal information. 
+                    This Privacy Statement outlines the types of information we collect, how we use it, and the measures we take to safeguard your data when you use our [Your App Name] Android app, which is available exclusively to authorized users.
+                </p>
+            </div>
+            <div class="container">
+                <span class="title">2. Information Collection and Use</span>
+                <p class="content">
+                    <span class="text-primary">Personal Information:</span> [Your App Name] may collect personally identifiable information, such as your name, 
+                    email address, or phone number, as part of the user authorization process. This information is used solely for granting access to the app and providing user support.
+                    <br><br><span class="text-primary">Non-personal Information:</span> We may collect non-personal data, such as device information, operating system,
+                    app usage statistics, and other diagnostic data to help improve the performance and functionality of [Your App Name].
+                    <br><br><span class="text-primary">Third-Party Services:</span> [Your App Name] may use third-party services, such as analytics tools, which may collect data
+                    in accordance with their respective privacy policies. Please review the privacy policies of these services for more information.
+                </p>
+            </div>
+            <div class="container">
+                <span class="title">3. Data Protection and Security</span>
+                <p class="content">
+                    <span class="text-primary">Data Storage:</span> We take appropriate measures to ensure the security
+                    of your data by storing it on secure servers with access limited to authorized personnel.
+                    <br><br><span class="text-primary">Data Retention:</span> We will retain your information only for as long as
+                    necessary to fulfill the purposes for which it was collected or to comply with legal obligations.
+                    <br><br><span class="text-primary">Data Sharing:</span> We do not sell, trade, or rent your personal information
+                    to third parties. We may share aggregated, non-personally identifiable data with partners for analytics and improvement purposes.
+                </p>
+            </div>
+            <div class="container">
+                <span class="title">4. User Rights and Control</span>
+                <p class="content">
+                    <span class="text-primary">Access and Correction:</span> You have the right to access, update, or delete your personal information held by us.
+                    To exercise this right, please contact us at [Your Company's Contact Email].
+                    <br><br><span class="text-primary">Opt-out:</span> You may opt-out of data collection by third-party services by adjusting the settings in [Your App Name]
+                    or contacting us at [Your Company's Contact Email].
+                </p>
+            </div>
+            <div class="container">
+                <span class="title">5. Contact us</span>
+                <p class="content">
+                    If you have any questions or concerns regarding this Privacy Statement or our privacy practices, please contact us at [Your Company's Contact Email].
+                </p>
+            </div>
+            <div class="container">
+                <span class="title">6. Changes to This Privacy Statement</span>
+                <p class="content">
+                    We may update our Privacy Statement from time to time. We encourage you to review this statement periodically to stay informed
+                    about our privacy practices. Your continued use of [Your App Name] constitutes your acceptance of any changes to this Privacy Statement.
+                </p>
+            </div>
+        </main>
+    </body>
+    <script>
+        document.querySelectorAll('main .container').forEach((elt) => {
+            elt.addEventListener('click', (e) => {
+                elt.classList.toggle('active');
+            })
+        })
+    </script>
+</html>
