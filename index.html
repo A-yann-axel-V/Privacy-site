@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+        <title>Document</title>
+        <style>
+            *
+            {
+                font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
+            }
+            .special, main p
+            {
+                position: relative;
+            }
+            .special::before, main p::before
+            {
+                content: "";
+                background-color: #fff;
+                height: 5px;
+                border-radius: 50px;
+                position: absolute;
+                bottom: -6px;
+                width: 100%;
+            }
+            main p:hover:before
+            {
+                width: 95%;
+            }
+            main p::before
+            {
+                width: 0;
+                background-color: #194b5f;
+                transition: all .5s ease;
+            }
+        </style>
+    </head>
+    <body>
+        <header style="height: 150px">
+            <div class="h-75 d-flex flex-column align-items-center justify-content-center" style="background-color: rgba(19, 35, 75, 0.62);">
+                <div class="text-white mt-2">
+                    <div class="fw-bold" style="font-family: cursive; font-size: 28px;">[Your App Name]</div>
+                    <p class="mt-1">
+                        <span class="special">Developer:</span> <span class="text-dark fw-bolder" style="font-size: 18px;">[Your Company Name]</span>
+                    </p>
+                </div>
+            </div>
+        </header>
+        <main class="p-4 border-bottom border-dark border-2">
+            <section>
+                <div>
+                    <div class="container-md mx-4 border border-end-0 border-top-0 border-bottom-0 border-4 border-dark p-3 mb-2">
+                        <h3>Privacy Statement</h3>
+                    </div>
+                    <p class="text container-sm px-3">
+                        At [Your Company Name], we value your privacy and are committed to protecting your personal information. 
+                        This Privacy Statement outlines the types of information we collect, how we use it, and the measures we take to safeguard your data when you use our [Your App Name] Android app, which is available exclusively to authorized users.
+                    </p>
+                </div>
+            </section>
+            <br>
+            <section>
+                <div>
+                    <div class="container-md mx-4 border border-end-0 border-top-0 border-bottom-0 border-4 border-dark p-3 mb-2">
+                        <h3>Information Collection and Use</h3>
+                    </div>
+                    <p class="text container-sm px-3">
+                        <span class="text-primary">Personal Information:</span> [Your App Name] may collect personally identifiable information, such as your name, 
+                        email address, or phone number, as part of the user authorization process. This information is used solely for granting access to the app and providing user support.
+                        <br><br><span class="text-primary">Non-personal Information:</span> We may collect non-personal data, such as device information, operating system,
+                        app usage statistics, and other diagnostic data to help improve the performance and functionality of [Your App Name].
+                        <br><br><span class="text-primary">Third-Party Services:</span> [Your App Name] may use third-party services, such as analytics tools, which may collect data
+                        in accordance with their respective privacy policies. Please review the privacy policies of these services for more information.
+                    </p>
+                </div>
+            </section>
+            <br>
+            <section>
+                <div>
+                    <div class="container-md mx-4 border border-end-0 border-top-0 border-bottom-0 border-4 border-dark p-3 mb-2">
+                        <h3>Data Protection and Security</h3>
+                    </div>
+                    <p class="text container-sm px-3">
+                        <span class="text-primary">Data Storage:</span> We take appropriate measures to ensure the security
+                        of your data by storing it on secure servers with access limited to authorized personnel.
+                        <br><br><span class="text-primary">Data Retention:</span> We will retain your information only for as long as
+                        necessary to fulfill the purposes for which it was collected or to comply with legal obligations.
+                        <br><br><span class="text-primary">Data Sharing:</span> We do not sell, trade, or rent your personal information
+                        to third parties. We may share aggregated, non-personally identifiable data with partners for analytics and improvement purposes.
+                    </p>
+                </div>
+            </section>
+            <br>
+            <section>
+                <div>
+                    <div class="container-md mx-4 border border-end-0 border-top-0 border-bottom-0 border-4 border-dark p-3 mb-2">
+                        <h3>User Rights and Control</h3>
+                    </div>
+                    <p class="text container-sm px-3">
+                        <span class="text-primary">Access and Correction:</span> You have the right to access, update, or delete your personal information held by us.
+                        To exercise this right, please contact us at [Your Company's Contact Email].
+                        <br><br><span class="text-primary">Opt-out:</span> You may opt-out of data collection by third-party services by adjusting the settings in [Your App Name]
+                        or contacting us at [Your Company's Contact Email].
+                    </p>
+                </div>
+            </section>
+            <br>
+            <section>
+                <div class="container-md mx-4 border border-end-0 border-top-0 border-bottom-0 border-4 border-dark p-3 mb-2">
+                   <h3>Contact us</h3>
+                </div>    
+                <p class="text container-sm px-3">
+                    If you have any questions or concerns regarding this Privacy Statement or our privacy practices, please contact us at [Your Company's Contact Email].
+                </p> 
+            </section>
+            <br>
+            <section>
+                <div class="container-md mx-4 border border-end-0 border-top-0 border-bottom-0 border-4 border-dark p-3 mb-2">
+                   <h3>Changes to This Privacy Statement</h3>
+                </div>    
+                <p class="text container-sm px-3">
+                    We may update our Privacy Statement from time to time. We encourage you to review this statement periodically to stay informed
+                    about our privacy practices. Your continued use of [Your App Name] constitutes your acceptance of any changes to this Privacy Statement.
+                </p> 
+            </section>
+        </main>
+        <div class="footer text-muted border-top p-3 d-flex justify-content-between">
+            &copy; Copyright 2023
+            <div class="text-dark">
+                <span class="text-decoration-underline">Last updated:</span> [Date of Last Update]
+            </div>
+        </div>
+    </body>
+</html>
